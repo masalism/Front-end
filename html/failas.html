@@ -6,11 +6,11 @@
     <title>Dokumentas</title>
 </head>
 
-<body>
+<body ">
     <div>Div'as</div>
     <p>Lorem ipsum dolor <br> sit amet <span>vienas</span> consectetur adipisicing elit. Sequi, eos.</p>
     <span>Span'as</span>
-    <a href="https://www.google.lt/" target="_blank">Nuoroda</a>
+    <a href=" https://www.google.lt/" target="_blank">Nuoroda</a>
     <a href="naujas.html"> naujas html</a><br>
     <a href="tel:867813392">Skambinti</a>
     <div>
@@ -27,14 +27,96 @@
         <li>Antras</li>
         <li>Trecias</li>
     </ul>
+
     <ol>
         <li>Pirmas</li>
         <li>Antras</li>
         <li>Trecias</li>
     </ol>
 
-    
+    <table border="1" width="100%">
+        <caption>Muse lentele</caption>
+        <tr>
+            <th>Vardas</th>
+            <th>Pavarde</th>
+            <th>Tel</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">Pirmas</td>
+            <!-- <td>Antras</td> -->
+            <td>Trecias</td>
+            <td>Ketvirtas</td>
+        </tr>
+        <tr>
+            <!-- <td >Pirmas</td> -->
+            <!-- <td>Antras</td> -->
+            <td>Trecias</td>
+            <td rowspan="2">Ketvirtas</td>
+            <!-- <td>Penktas</td> -->
+        </tr>
+        <tr>
+            <td>Pirmas</td>
+            <td>Antras</td>
+            <td>Trecias</td>
+            <!-- <td>Ketvirtas</td> -->
+        </tr>
+    </table>
+    <br>
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Vardas</th>
+                <th>Pavarde</th>
+                <th>Tel</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pirmas</td>
+                <td>Antras</td>
+                <td>Trecias</td>
+                <td>Ketvirtas</td>
+            </tr>
+            <tr>
+                <td>Pirmas</td>
+                <td>Antras</td>
+                <td>Trecias</td>
+                <td>Ketvirtas</td>
+                <!-- <td>Penktas</td> -->
+            </tr>
+            <tr>
+                <td>Pirmas</td>
+                <td>Antras</td>
+                <td>Trecias</td>
+                <td>Ketvirtas</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <form style="margin-bottom: 100px;">
+        <input type="text" placeholder="Vardas" value="" name="name">
+        <input type="text" placeholder="Pavarde" value="" name="secondname">
+        <input type="number" placeholder="Amzius" name="age" value="">
+        <input type="password" name="password" placeholder="Slaptazodis" value="">
+        <select name="">
+            <option value="10">18</option>
+            <option value="20">19-25</option>
+            <option value="30">25-40</option>
+            <option value="48">40-70</option>
+        </select>
+        <select>
+            <option value="" selected disabled>pasirinkite spalva</option>
+            <option value="red">Raudona</option>
+            <option value="green">Zalia</option>
+            <option value="yellow" disabled>Geltona</option>
+            <option value="black">Juoda</option>
+        </select>
+        <button>Patvirtinti</button>
+        <input type="submit" value="Pirmyn">
 
+    </form>
 </body>
 
 </html>
