@@ -3,12 +3,62 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Dokumentas</title>
 </head>
 
-<body ">
-    <div>Div'as</div>
-    <p>Lorem ipsum dolor <br> sit amet <span>vienas</span> consectetur adipisicing elit. Sequi, eos.</p>
+<style>
+    /* body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    div {
+        color: orangered;
+        background-color: yellow;
+    }
+
+    a {
+        color: darkgreen;
+        text-decoration: none;
+        transition: all .2s;
+
+    }
+    a:hover {
+        font-size: 20px;
+        color: darkred;
+    }
+</style>
+<p class="paragrafas">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iure omnis laudantium iste sit repellat culpa nostrum commodi quo aliquid natus nulla, ab accusamus assumenda illum, quaerat fugiat perferendis deserunt?
+</p>
+<p class="paragrafas1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, quis aperiam deserunt vel nulla, voluptatibus eos quasi quam similique fuga autem quibusdam suscipit quas cumque, blanditiis unde sequi. Consequuntur, ut.</p>
+<h1>Antraste</h1>
+<h2>Heading 2</h2>
+<h3>Dar kita antraste</h3>
+<nav>
+    <ul>
+        <li>elementas</li>
+        <li>elementas</li>
+        <li>elementas</li>
+        <li>elementas</li>
+        <li>elementas</li>
+    </ul>
+</nav>
+<ul>
+    <li>kiti elementai</li>
+    <li>kiti elementai</li>
+    <li>kiti elementai</li>
+</ul>
+<body>
+    <div class="musu_klase">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus tenetur tempore dicta. Et, aut nemo. Quo est sunt rem et?
+        </p>
+    </div>
+    <div style="color: blue; background-color: darkslategray;">Div'as</div>
+    <p class="listo_elementas">Lorem ipsum dolor <br> sit amet <span>vienas</span> consectetur adipisicing elit. Sequi, eos.</p>
     <span>Span'as</span>
     <a href=" https://www.google.lt/" target="_blank">Nuoroda</a>
     <a href="naujas.html"> naujas html</a><br>
@@ -31,7 +81,7 @@
     <ol>
         <li>Pirmas</li>
         <li>Antras</li>
-        <li>Trecias</li>
+        <li class="listo_elementas kita_klase">Trecias</li>
     </ol>
 
     <table border="1" width="100%">
@@ -103,7 +153,7 @@
             <input type="checkbox" name="choices"><label for="">Trecias</label>
             <input type="checkbox" name="choices"><label for=""">Ketvirtas</label>
             <br>
-            <input type="radio" name="radio"><label for="">One</label>
+            <input type="radio" name="radio"><label class="listo_elemntas" for="">One</label>
             <input type="radio" name="radio"><label for="">Two</label>
             <input type="radio" name="radio"><label for="">Three</label>
             <input type="radio" name="radio"><label for="">Four</label>

@@ -1,0 +1,42 @@
+div {
+    font-size: 20px;
+}
+
+li {
+    color: green;
+}
+
+.listo_elementas {
+    color: red;
+}
+
+.kita_klase {
+    background-color: blue;
+    font-size: 40px;
+}
+
+.musu_klase p {
+    color: green;
+}
+
+ul li {
+    color: blue;
+}
+
+.paragrafas, .paragrafas1 {
+    background-color: green;
+}
+
+/* rgb spalva */
+h1 {
+    color: rgba(166,25,255, .5);
+    background-color: #d7d7d7;
+}
+
+h2 {
+    color: #af6c60;
+}
+
+h3 {
+    color: hsl(120, 100%, 10%)
+}
