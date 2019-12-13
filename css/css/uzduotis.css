@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background: lightblue;
+    width: 100vw;
+    height: 75vw;
+}
+
+.container:hover {
+    background: green;
+}
+
+.block {
+    background: blue;
+    width: 25vw;
+    height: 25vw;
+    margin: 10px 0;
+}
+
+.block:hover {
+    background: yellow;
+}
+
+.stroked {
+    border: 10px solid black;
+}
+
+.stroked:hover {
+    background: black;
+}
+
+.rectangle {
+    background: purple;
+    width: 60vw;
+    height: 25vw;
+    margin-bottom: 10px;
+}
+
+.rectangle:hover {
+    background: brown;
+}
+
+.rectangle .block {
+    background: red;
+}
+
+.rectangle:hover .block:hover {
+    background: coral;
+}
+
+.rectangle.stroked {
+    background: yellowgreen;
+    width: 60vw;
+    height: 25vw;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.rectangle.stroked:hover {
+    background: darkgreen;
+}

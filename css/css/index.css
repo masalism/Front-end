@@ -1,0 +1,79 @@
+
+* {
+    box-sizing: content-box;
+    /* Eina i elemento vidu */
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 25px;
+}
+.remelis {
+    border: 4px solid #acf543;
+    border-top: 10px dotted red;
+    border-left: none;
+    border-color: orangered;
+    border-width: 7px;
+    border-style: dashed;
+    border-top-style: solid;
+    border-bottom-color: orchid;
+    border-left-width: 20px;
+    
+}
+
+.padding {
+    padding: 20px;
+    padding-left: 5px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    padding: 20px 40px 30px 50px;
+    padding: 20px 60px 80px;
+    padding: 50px 100px;
+}
+.margin {
+    margin: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-right: 100px;
+    margin: 20px 40px 30px 100px;
+    margin: 20px 100px 50px;
+    margin: 100px 0;
+    margin-right: 0 auto;
+}
+
+.background {
+    background-color: rgb(54, 12, 124);
+}
+
+.background_image {
+    height: 500px;
+    background-image: url('https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background: url('https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg'), no-repeat center cover;
+}
+
+.tevinis {
+    font-size: 20px;
+}
+
+nav {
+    width: 6em;
+}
+
+.tevinis p {
+    width: 10rem;
+    font-size: 2rem;
+}
+
+.vw {
+    width: 50vh;
+    height: 50vh;
+}
+
+.tevinis.vw {
+    border: 10px solid green;
+}
+
