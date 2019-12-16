@@ -38,11 +38,16 @@ li:hover {
     color: green;
 }
 /* kai laikai paspaudes */
-#mygtukas:active {
+.mygtukas:active + #mygtukas {
     background: purple;
+    transform: rotate(90deg);
 }
 
 /* odd, even, 3n, 3n + 2 */
 #klasiu_sekcija .dar_viena_klase:nth-child(3n + 5) {
-    background-color: #666;
+
+    background-color: #6543ad;
+    padding: 21px;
+    margin: 20px;
+}
 }

@@ -1,0 +1,85 @@
+* {
+    box-sizing: content-box;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.a, .b, .d, .e, .i {
+    height: 200px;
+}
+
+header {
+    width: 100%;
+}
+
+main {
+    margin-top: 10px;
+    height: 1000px;
+}
+
+.a {
+    width: calc(75% - 5px);
+    float: left;
+}
+
+.b {
+    width: calc(25% - 5px);
+    float: right;
+}
+
+.a, .b {
+    background-color: greenyellow;
+}
+
+.first, .second, .third {
+    float: left;
+    height: 100%;
+}
+
+.first {
+    width: calc(15% - 5px);
+}
+.second {
+    margin-left: 5px;
+    width: calc(60% - 5px);
+}
+.third {
+    margin-left: 10px;
+    width: calc(25% - 5px);
+}
+
+.c {
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+}
+.d, .e, .g {
+    background-color: blue;
+    margin-bottom: 10px;
+}
+
+.f, .h {
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.f {
+    height: 410px;
+}
+
+.g, .h {
+    height: calc(100% - 420px);
+    width: 100%;
+}
+
+.i {
+    background-color: lightblue;
+}
+
+footer {
+    margin-top: 10px;
+}
