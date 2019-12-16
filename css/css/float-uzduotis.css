@@ -18,7 +18,7 @@ header {
 
 main {
     margin-top: 10px;
-    height: 1000px;
+    height: 100vw;
 }
 
 .a {
@@ -41,10 +41,10 @@ main {
 }
 
 .first {
-    width: calc(15% - 5px);
+    width: calc(15% - 10px);
 }
 .second {
-    margin-left: 5px;
+    margin-left: 10px;
     width: calc(60% - 5px);
 }
 .third {
