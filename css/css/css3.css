@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+#pirma_sekcija {
+    background: darkorange;
+}
+
+#pirma_sekcija p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+.klase p {
+    font-size: 30px;
+    
+}
+
+.klase > p {
+    color: greenyellow;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+/* Paima antra */
+.kontaktu_nuoroda +a{
+    color: orangered;
+}
+li:hover {
+    background: blue;
+}
+.mygtukas:focus, .mygtukas:hover {
+    background: cadetblue;
+    font-size: 30px;
+}
+/* praleidzia pati pirma */
+.kontaktu_nuoroda ~ a {
+    color: green;
+}
+/* kai laikai paspaudes */
+#mygtukas:active {
+    background: purple;
+}
+
+/* odd, even, 3n, 3n + 2 */
+#klasiu_sekcija .dar_viena_klase:nth-child(3n + 5) {
+    background-color: #666;
+}
