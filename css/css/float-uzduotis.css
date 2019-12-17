@@ -1,40 +1,32 @@
 * {
     box-sizing: content-box;
 }
-
 .clearfix:after {
     content: '';
     display: table;
     clear: both;
 }
-
 .a, .b, .d, .e, .i {
     height: 200px;
 }
-
 header {
     width: 100%;
 }
-
 main {
     margin-top: 10px;
     height: 100vw;
 }
-
 .a {
     width: calc(75% - 5px);
     float: left;
 }
-
 .b {
     width: calc(25% - 5px);
     float: right;
 }
-
 .a, .b {
     background-color: greenyellow;
 }
-
 .first, .second, .third {
     float: left;
     height: 100%;
@@ -51,7 +43,6 @@ main {
     margin-left: 10px;
     width: calc(25% - 5px);
 }
-
 .c {
     background-color: yellow;
     height: 100%;
@@ -61,25 +52,20 @@ main {
     background-color: blue;
     margin-bottom: 10px;
 }
-
 .f, .h {
     background-color: red;
     margin-bottom: 10px;
 }
-
 .f {
     height: 410px;
 }
-
 .g, .h {
     height: calc(100% - 420px);
     width: 100%;
 }
-
 .i {
     background-color: lightblue;
 }
-
 footer {
     margin-top: 10px;
 }

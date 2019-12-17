@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+.a {
+    float: left;
+    width: 80%;
+
+}
+
+.b {
+    float: left;
+    width: 20%;
+}
+
+.a, .b {
+    background: greenyellow;
+    height: 10vh;
+}
+
+.c {
+    background-color: yellow;
+    height: 80vh;
+}
+.a, .b, .d, .e, .i {
+    height: 10vh;
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h, .i {
+    border: 3px solid white;
+}
+
+.g, .h {
+    height: 60vh;
+}
+
+.f {
+    height: 20vh;
+}
+
+.i {
+    /* Taiso float elementus be clearfix */
+    float: left;
+    width: 100%;
+    background: lightblue;
+}
+
+.melyna > div {
+    background: blue;
+}
+
+.raudona > div {
+    background: red;
+}
+
+.geltona {
+    float: left;
+    width: 30%;
+}
+
+.melyna {
+    float: left;
+    width: 50%;
+}
+
+.raudona {
+    float: left;
+    width: 20%;
+
