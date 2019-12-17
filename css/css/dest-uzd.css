@@ -8,9 +8,7 @@ body {
 .a {
     float: left;
     width: 80%;
-
 }
-
 .b {
     float: left;
     width: 20%;
@@ -24,6 +22,7 @@ body {
 .c {
     background-color: yellow;
     height: 80vh;
+    overflow-y: auto;
 }
 .a, .b, .d, .e, .i {
     height: 10vh;
@@ -69,4 +68,4 @@ body {
 .raudona {
     float: left;
     width: 20%;
-
+}
