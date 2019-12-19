@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+
+}
+header {
+    background: darkgoldenrod;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    /* justify-content: flex-end; */
+}
+
+header a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+}
+header {
+    background: red;
+}
+
+.logotipas {
+    /* display: none; */
+    width: 40px;
+    height: 20px;
+    background: darkred;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+}
+
+main {
+    background: darkgrey;
+    height: 300px;
+}
+
+/* Media queries */
+@media (max-width: 450px) {
+    nav {
+        display: none;
+    }
+}
+@media print {
+    header {
+        display: none;
+    }
+}
+@media (min-width: 700px) {
+    header {
+        background-color: darkturquoise;
+    }
+}
+@media (min-width: 800px) {
+    header {
+        background-color: greenyellow;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+    header {
+        background-color: indigo;
+    }
+    header a {
+        color: lightcoral;
+        padding: 50px;
+    }
+}
+@media (orientation: landscape) {
+    .logotipas {
+        background: darkseagreen;
+        height: 50px;
+        width: 30px;
+    }
+}
+@media (orientation: portrait) {
+    header {
+        border-radius: 50%;
+    }
+}
+
+@media (min-aspect-ratio: 4/3) {
+    main {
+        background: violet;
+    }
+}
