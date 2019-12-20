@@ -1,0 +1,48 @@
+.translate {
+    background: darkcyan;
+    transform: translateX(10px);
+
+}
+.rotate {
+    background: darkmagenta;
+    transform: rotate(362deg);
+    transform-origin: left bottom;
+}
+.scale {
+    background: darkorange;
+    transform: scale(0.6);
+}
+.skew {
+    background: darkslateblue;
+    transition: all 2s ease-in-out;
+
+}
+.skew:hover {
+    transform: skew(10deg, 10deg) rotate(1250deg);
+    background: darkred;
+    /* overflow: hidden; */
+}
+
+.blokas {
+    position: relative;
+    margin-top: 30px;
+    width: 40%;
+    background: greenyellow;
+    animation: sukasi 5s 5 alternate forwards;
+}
+@keyframes sukasi {
+    0% {
+        width: 40%;
+        background: greenyellow;
+    }
+    50% {
+        width: 70%;
+        transform: rotate(0);
+        background: dimgray;
+    }
+    100% {
+        /* left: 50%; */
+        width: 30%;
+        transform: rotate(360deg);
+    }
+}
