@@ -1,0 +1,20 @@
+@mixin parametrai {
+    background: darkcyan;
+    padding: 5px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+@mixin dydziai($padding, $margin, $color, $background, $didelis) {
+    background: $background;
+    padding: $padding;
+    margin: $margin;
+    font-size: $didelis;
+    color: $color;
+    border-radius: $padding;
+    border: 3px solid $color;
+    transform: translate($didelis, $didelis);
+    box-shadow: 2px 3px 4px rgba(0,0,0,.5);
+}

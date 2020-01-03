@@ -1,0 +1,116 @@
+.pirmas {
+  background: darkcyan;
+  padding: 5px;
+  margin: 10px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.pirmas + div {
+  background-color: #c80000;
+  padding: 30px;
+}
+
+.pirmas ~ .trecias {
+  background: #c80000;
+  margin: 30px;
+  font-family: "ubuntu";
+}
+
+.pirmas .pirma_klase, .pirmas .antra_klase, .pirmas .trecia_klase {
+  background-color: #000096;
+}
+
+.pirmas .penkta_klase {
+  background-color: yellow;
+  background: darkcyan;
+  padding: 5px;
+  margin: 10px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.pirmas .ketvirta_klase {
+  background: orange;
+  padding: 10px;
+  margin: 20px;
+  font-size: 40px;
+  color: blue;
+  border-radius: 10px;
+  border: 3px solid blue;
+  -webkit-transform: translate(40px, 40px);
+          transform: translate(40px, 40px);
+  -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pirmas .trecia_klase {
+  background: orange;
+  padding: 20px;
+  margin: 30px;
+  font-size: 30px;
+  color: red;
+  border-radius: 20px;
+  border: 3px solid red;
+  -webkit-transform: translate(30px, 30px);
+          transform: translate(30px, 30px);
+  -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pirmas .pirma_klase {
+  padding: 20px;
+  background-color: yellow;
+}
+
+.pirmas .pirma_klase p {
+  font-weight: 700;
+}
+
+.pirmas .pirma_klase p div article span a img {
+  width: 100%;
+}
+
+.pirmas .pirma_klase a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+}
+
+.pirmas .pirma_klase a:hover {
+  color: yellow;
+}
+
+.pirmas .pirma_klase button {
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  background: darkcyan;
+  padding: 5px;
+  margin: 10px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.pirmas .pirma_klase button:hover, .pirmas .pirma_klase button:focus {
+  color: yellow;
+}
+
+.pirmas .pirma_klase button:active {
+  color: #000;
+}
+
+.pirmas .pirma_klase button.klase {
+  color: yellow;
+}
+
+.pirmas > div {
+  background: yellow;
+}
+
+.antras div {
+  background: #c80000;
+}

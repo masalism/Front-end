@@ -1,0 +1,76 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+.pirmas {
+    @include parametrai;
+    + div {
+        background-color: $raudona;
+        padding: $tarpas;
+    }
+    ~ .trecias {
+        background: $raudona;
+        margin: $tarpas;
+        font-family: $ubuntu;
+    }
+    .pirma_klase, .antra_klase, .trecia_klase {
+        background-color: $melyna;
+    }
+    .penkta_klase {
+        background-color: $zalia;
+        @include parametrai;
+    }
+    .ketvirta_klase {
+        @include dydziai(10px, 20px, blue, orange, 40px);
+    }
+    .trecia_klase {
+        @include dydziai(20px, 30px, red, orange, 30px);
+    }
+    .pirma_klase {
+        padding: 20px;
+        background-color: $zalia;
+        p {
+            font-weight: 700;
+            div {
+                article {
+                    span {
+                        a {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        a {
+            text-decoration: none;
+            font-size: 30px;
+            color: #fff;
+            &:hover {
+                color: yellow;
+            }
+        }
+        button {
+            text-decoration: none;
+            font-size: 30px;
+            color: #fff;
+            @include parametrai;
+            &:hover, &:focus {
+                color: $zalia;
+            }
+            &:active {
+                color: #000;
+            }
+            &.klase {
+                color: $zalia;
+            }
+        }
+    }
+    > div {
+        background: $zalia;
+    }
+}
+.antras {
+    div {
+        background: $raudona;
+    }
+}
