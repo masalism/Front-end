@@ -1,0 +1,87 @@
+@import "footer";
+@mixin responsive-sm {
+    @media (max-width: 540px) {
+        @content;
+    }
+}
+@mixin responsive-md {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin responsive-lg {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+@mixin responsive-xl {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin responsive-xxl {
+    @media (max-width: 1350px) {
+        @content;
+    }
+}
+header {
+    background: red;
+    padding: 40px;
+    @include responsive-xl() {
+        padding: 30px;
+    }
+    @include responsive-md() {
+        padding: 20px;
+    }
+
+    nav {
+        background: blue;
+        margin: 30px;
+        @include responsive-sm() {
+            margin: 10px;
+        }
+    }
+}
+$kintamasis: 20px;
+@mixin taisykles {
+    font-size: 20px;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+
+main {
+    padding: $kintamasis;
+}
+.elementas {
+    @include taisykles;
+}
+
+// GRID //
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 3fr;
+    // grid-template-columns: 1fr 2fr 3fr 2fr 5fr;
+    // pirma - rows, antra - columns
+    // grid-template: 
+    // 100px 150px 200px /
+    // 20% 30% 50%;
+    // grid-template-rows: 100px 150px 200px;
+    // grid-column-gap: 2em;
+    // grid-row-gap: 1em;
+    grid-gap: 0.5em;
+    // justify-items: center;
+    // align-items: center;
+}
+.grid > div:nth-child(even) {
+    background: grey;
+}
+.grid > div:nth-child(odd) {
+    background: greenyellow;
+}
+.grid > div:first-child {
+    grid-row: 1/3;
+    grid-column: 3/5;
+}
+
