@@ -18,12 +18,13 @@
         background-color: $zalia;
         @include parametrai;
     }
-    .ketvirta_klase {
-        @include dydziai(10px, 20px, blue, orange, 40px);
-    }
     .trecia_klase {
-        @include dydziai(20px, 30px, red, orange, 30px);
+        @include dydziai(30px, green, orange, 30px,20px 50px);
     }
+    .ketvirta_klase {
+        @include dydziai(20px, blue, orange, 40px, 20px 10px 40px);
+    }
+    
     .pirma_klase {
         padding: 20px;
         background-color: $zalia;
@@ -73,4 +74,15 @@
     div {
         background: $raudona;
     }
+}
+
+.sesta_klase {
+    padding: 20px;
+    margin: 30px;
+    background: darkgreen;
+    font-size: 24px;
+}
+.septinta_klase {
+    @extend .sesta_klase;
+    background: darkkhaki;
 }

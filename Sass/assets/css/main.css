@@ -23,7 +23,7 @@
 }
 
 .pirmas .penkta_klase {
-  background-color: yellow;
+  background-color: green;
   background: darkcyan;
   padding: 5px;
   margin: 10px;
@@ -32,13 +32,27 @@
   border: 1px solid #000;
 }
 
+.pirmas .trecia_klase {
+  background: orange;
+  padding: 20px 50px;
+  margin: 30px;
+  font-size: 30px;
+  color: green;
+  border-radius: 30px;
+  border: 3px solid green;
+  -webkit-transform: translate(30px, 30px);
+          transform: translate(30px, 30px);
+  -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
 .pirmas .ketvirta_klase {
   background: orange;
-  padding: 10px;
+  padding: 20px 10px 40px;
   margin: 20px;
   font-size: 40px;
   color: blue;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 3px solid blue;
   -webkit-transform: translate(40px, 40px);
           transform: translate(40px, 40px);
@@ -46,23 +60,9 @@
           box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
-.pirmas .trecia_klase {
-  background: orange;
-  padding: 20px;
-  margin: 30px;
-  font-size: 30px;
-  color: red;
-  border-radius: 20px;
-  border: 3px solid red;
-  -webkit-transform: translate(30px, 30px);
-          transform: translate(30px, 30px);
-  -webkit-box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
-          box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
-}
-
 .pirmas .pirma_klase {
   padding: 20px;
-  background-color: yellow;
+  background-color: green;
 }
 
 .pirmas .pirma_klase p {
@@ -96,7 +96,7 @@
 }
 
 .pirmas .pirma_klase button:hover, .pirmas .pirma_klase button:focus {
-  color: yellow;
+  color: green;
 }
 
 .pirmas .pirma_klase button:active {
@@ -104,13 +104,24 @@
 }
 
 .pirmas .pirma_klase button.klase {
-  color: yellow;
+  color: green;
 }
 
 .pirmas > div {
-  background: yellow;
+  background: green;
 }
 
 .antras div {
   background: #c80000;
+}
+
+.sesta_klase, .septinta_klase {
+  padding: 20px;
+  margin: 30px;
+  background: darkgreen;
+  font-size: 24px;
+}
+
+.septinta_klase {
+  background: darkkhaki;
 }

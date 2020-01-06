@@ -7,14 +7,15 @@
     border: 1px solid #000;
 }
 
-@mixin dydziai($padding, $margin, $color, $background, $didelis) {
+@mixin dydziai($margin, $color, $background, $didelis, $padding...) {
     background: $background;
     padding: $padding;
     margin: $margin;
     font-size: $didelis;
     color: $color;
-    border-radius: $padding;
+    border-radius: $margin;
     border: 3px solid $color;
     transform: translate($didelis, $didelis);
     box-shadow: 2px 3px 4px rgba(0,0,0,.5);
 }
+
