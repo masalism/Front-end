@@ -1,0 +1,52 @@
+body {
+    background: blue;
+}
+h1 {
+    position: relative;
+    text-align: center;
+}
+h1:before {
+    content: '';
+    background-color: darkred;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 35%;
+    height: 1px;
+}
+h1:after {
+    content: '';
+    background-color: darkred;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 35%;
+    height: 1px;
+}
+ul li {
+    list-style: none;
+    position: relative;
+}
+li::before {
+    content: 'a';
+    position: absolute;
+    left: -14px;
+    top: 20px;
+}
+h3::after {
+    content: '';
+    background-color: darkorange;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+.a {
+    background: linear-gradient(260deg, rgb(0,243,43) 0, rgb(45, 6, 34) 50%, rgb(200, 235, 45)) 140%;
+    height: 500px;
+    width: 100%;
+}
+.b {
+    background-image: radial-gradient(rgba(76, 4, 25, .8), rgba(0, 65, 7, .4));
+    height: 500px;
+    width: 100%;
+}
