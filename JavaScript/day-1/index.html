@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS day 1</title>
+</head>
+
+<body>
+    <p class="plotis"></p>
+    <p class="aukstis"></p>
+    <h1 class="perimetras"></h1>
+    <h2 class="plotas"></h2>
+    <h3 class="istrizaine"></h3>
+
+    <script>
+        var plotis = 5;
+        var aukstis = 4;
+
+        var perimetras = plotis + plotis + aukstis + aukstis;
+        var plotas = aukstis * plotis;
+        var istrizaine = Math.sqrt((aukstis * aukstis) + (plotis * plotis));
+        console.log(istrizaine);
+
+        document.querySelector('.plotis').innerHTML = 'Plotis: ' + plotis
+        document.querySelector('.aukstis').innerHTML = 'Aukstis: ' + aukstis
+        document.querySelector('.perimetras').innerHTML = 'Perimtras: ' + perimetras
+        document.querySelector('.plotas').innerHTML = 'Plotas: ' + plotas
+        document.querySelector('.istrizaine').innerHTML = 'Istrizaine: ' + istrizaine
+
+        var tekstas = 'beleka';
+        var skaicius = 10;
+        var daugikilis = 2;
+        var daliklis = 7;
+        var rezultatas = skaicius / daliklis
+        var boolean = false;
+        var matematika = skaicius * daliklis / daliklis;
+        var sudetis = skaicius++;
+        var tekstai = tekstas - 'labas'
+
+        console.log(tekstai);
+        console.log(sudetis);
+        console.log(skaicius);
+        console.log(rezultatas)
+        console.log(skaicius);
+        console.log(boolean);
+        console.log(tekstas);
+        // alert('labas dar karta');
+    </script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
