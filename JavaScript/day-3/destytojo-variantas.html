@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Destytojo variantas</title>
+</head>
+
+<body>
+    <table border="1" style="width: 100%;">
+        <thead>
+            <th>Data</th>
+            <th>Numeris</th>
+            <th>Kelias m</th>
+            <th>Laikas s</th>
+            <th>Greitis, km/h</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+        var tbody = document.querySelector('table tbody');
+        var m = [
+            ['2020-01-14', 'LID486', 50000, 3654, 100],
+            ['2019-06-04', 'HON950', 600000, 54367, 400],
+            ['2018-12-25', 'EZO763', 70000, 5000, 300],
+            ['2020-01-01', 'KZG973', 546540, 54332, 200]
+        ];
+
+        // for (var i = 0; i < m.length; i++) {
+        //     var data = m[i][0]
+        //     var dataTd = '<td>' + data + '</td>';
+        //     var numeris = m[i][1]
+        //     var numerisTd = '<td>' + numeris + '</td>';
+        //     var kelias = m[i][2];
+        //     var keliasTd = '<td>' + kelias + '</td>';
+        //     var laikas = m[i][3];
+        //     var laikasTd = '<td>' + laikas + '</td>';
+        //     var greitis = Math.round((kelias / laikas * 3.6) * 100) / 100;
+        //     console.log(greitis)
+        //     var gretisTd = '<td>' + greitis + '</td>';
+        //     var tr = '<tr>' + dataTd + numerisTd + keliasTd + laikasTd + gretisTd + '</tr>';
+        //     console.log(tr);
+        //     tbody.innerHTML += tr
+        // }
+
+        for (var i = 0; i < m.length; i++) {
+            var tr = '<tr>';
+            for (var j = 0; j < m[i].length; j++) {
+                console.log(m[i][j])
+                var td = '<td>' + m[i][j] + '</td>';
+                tr += td
+            }
+            tr += '</tr>';
+            tbody.innerHTML += tr;
+        }
+    </script>
+</body>
+
+</html>

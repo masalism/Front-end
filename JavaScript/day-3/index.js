@@ -32,7 +32,6 @@ for (var i = 0; i < masyvas.length; i++) {
         // console.log(masyvas[i]);
         suma += masyvas[i];
         skaitliukas++;
-
     }
 }
 console.log(suma / skaitliukas);
