@@ -14,7 +14,6 @@ var masina = [
 ];
 
 for (var i = 0; i < masina.length; i++) {
-    for (var j = 0; j < masina[i].length; j++ )
     var trEl = document.createElement('tr');
     trEl.setAttribute('id', `tBody${i + 1}`);
     var dataEl = document.createElement('td');
