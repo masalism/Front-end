@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drag events</title>
+</head>
+<style>
+    .container {
+        background: blue;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    #item1 {
+        background: gold;
+    }
+    #item2 {
+        background: darkcyan;
+    }
+    #item3 {
+        background: darkmagenta;
+    }
+    .container1, .container2, .container3 {
+        display: flex;
+        background: green;
+        height: 50px;
+        align-items: center;
+    }
+    .container2 {
+        background: red;
+    }
+    .container3 {
+        background: darkorange;
+    }
+</style>
+<body>
+    <div class="container" ondrop="end(event)" ondragover="middle(event)">
+        <div id="item1" data-index="0" data-name="white king" class="white" ondragstart="start(event)" draggable="true">
+            &#x2654;
+        </div>
+        <div id="item2" data-index="1" data-name="white queen" class="white" ondragstart="start(event)" draggable="true">
+            &#x2655;
+        </div>
+        <div id="item3" data-index="2" data-name="black first bishop" class="black" ondragstart="start(event)" draggable="true">
+            &#x265D;
+        </div>
+    </div>
+    <div class="container1" id="negalima" ondrop="end(event)" ondragover="middle(event)">
+
+    </div>
+    <div class="container2" ondrop="end(event)" ondragover="middle(event)"></div>
+    <div class="container3" ondrop="end(event)" ondragover="middle(event)"></div>
+    <script>
+        function start(event) {
+            elementas = event.target;
+            // console.log(elementas.getAttribute('data-index'));
+            // console.log(elementas.getAttribute('data-name'));
+            parent = elementas.parentElement;
+            // document.querySelector('body').appendChild(elementas);
+        }
+        function middle(event) {
+            var klase = elementas.classList.contains('black');
+            console.log(klase);
+            padetis = event.target;
+            var tevineKlase = padetis.classList.contains('container2');
+            console.log(tevineKlase)
+            if (elementas.id == padetis.id || padetis.id == 'negalima' || klase && tevineKlase) {
+                return;
+            }
+            // reikalingas, jeigu noresim kazka idet i sita elementa
+            event.preventDefault();
+        }
+        function end(event) {
+            console.log(parent);
+            console.log(event.target);
+            padetis.appendChild(elementas);
+        }
+    </script>
+</body>
+</html>

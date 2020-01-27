@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS day 9</title>
+    <style>
+        .container {
+            display: flex;
+            background: blue;
+            height: 50px;
+        }
+        #item1 {
+            background: gold;
+            width: 30px;
+            height: 30px;
+        }
+        #item2 {
+            background: cyan;
+            width: 30px;
+            height: 30px;
+        }
+        #item3 {
+            background: darkred;
+            width: 30px;
+            height: 30px;
+        }
+        .container1 {
+            display: flex;
+            background: greenyellow;
+            height: 50px;
+        }
+        .container2 {
+            display: flex;
+            background: darkorchid;
+            height: 50px;
+        }
+        .container3 {
+            display: flex;
+            background: darkslategrey;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" ondrop="end(event)" ondragover="middle(event)">
+        <div id="item1" draggable="true" ondragstart="start(event)">
+
+        </div>
+        <div id="item2" draggable="true" ondragstart="start(event)">
+
+        </div>
+        <div id="item3" draggable="true" ondragstart="start(event)">
+
+        </div>
+    </div>
+    <div class="container1" ondrop="end(event)" ondragover="middle(event)">
+
+    </div>
+    <div class="container2" ondrop="end(event)" ondragover="middle(event)">
+
+    </div>
+    <div class="container3" ondrop="end(event)" ondragover="middle(event)">
+
+    </div>
+ 
+
+ 
+    <script src="script.js"></script>
+</body>
+
+</html>
