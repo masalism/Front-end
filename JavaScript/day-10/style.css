@@ -1,0 +1,23 @@
+#lenta {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+.langelis {
+    width: 25%;
+    min-height: 100px;
+    background: brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sviesus {
+    background: lightblue;
+}
+
+.figura {
+    font-size: 50px; 
+}

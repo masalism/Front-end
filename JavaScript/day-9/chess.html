@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <div class="board">
         <table>
             <thead>
@@ -30,103 +29,163 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td id="1_1" class="black"ondrop="end(event)" ondragover="middle(event)"><span data-figure="tower_b1" draggable="true" ondragstart="start(event)" data-place="negalima">&#x265C;</span></td>
-                    <td id="1_2" class="white"ondrop="end(event)" ondragover="middle(event)"><span data-figure="horse_b1" draggable="true" ondragstart="start(event) ">&#x265E;</span></td>
-                    <td id="1_3" class="black"ondrop="end(event)" ondragover="middle(event)"><span data-figure="bishop_b1" draggable="true" ondragstart="start(event) ">&#x265D;</span></td>
-                    <td id="1_4" class="white"ondrop="end(event)" ondragover="middle(event)"><span data-figure="queen_b" draggable="true" ondragstart="start(event) ">&#x265B;</span></td>
-                    <td id="1_5" class="black"ondrop="end(event)" ondragover="middle(event)"><span data-figure="king_b" draggable="true" ondragstart="start(event) ">&#x265A;</span></td>
-                    <td id="1_6" class="white"ondrop="end(event)" ondragover="middle(event)"><span data-figure="bishop_b2" draggable="true" ondragstart="start(event) ">&#x265D;</span></td>
-                    <td id="1_7" class="black"ondrop="end(event)" ondragover="middle(event)"><span data-figure="horse_b2" draggable="true" ondragstart="start(event) ">&#x265E;</span></td>
-                    <td id="1_8" class="white"ondrop="end(event)" ondragover="middle(event)"><span data-figure="tower_b2" draggable="true" ondragstart="start(event) ">&#x265C;</span></td>
+                    <td id="a1" data-x="1" data-y="1" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="tower_b1"draggable="true" class="figure"   ondragstart="start(event)">&#x265C;</div>
+                    </td>
+                    <td id="a2" data-x="2" data-y="1" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="horse_b1"draggable="true" class="figure"   ondragstart="start(event) ">&#x265E;</div>
+                    </td>
+                    <td id="a3" data-x="3" data-y="1" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="bishop_b1"draggable="true" class="figure"   ondragstart="start(event) ">&#x265D;</div>
+                    </td>
+                    <td id="a4" data-x="4" data-y="1" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="queen_b"draggable="true" class="figure"   ondragstart="start(event) ">&#x265B;</div>
+                    </td>
+                    <td id="a5" data-x="5" data-y="1" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="king_b"draggable="true" class="figure"   ondragstart="start(event) ">&#x265A;</div>
+                    </td>
+                    <td id="a6" data-x="6" data-y="1" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="bishop_b2"draggable="true" class="figure"   ondragstart="start(event) ">&#x265D;</div>
+                    </td>
+                    <td id="a7" data-x="7" data-y="1" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="horse_b2"draggable="true" class="figure"   ondragstart="start(event) ">&#x265E;</div>
+                    </td>
+                    <td id="a8" data-x="8" data-y="1" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="tower_b2"draggable="true" class="figure"   ondragstart="start(event) ">&#x265C;</div>
+                    </td>
                     <td>1</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td id="2_1" class="white" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_b1" draggable="true" ondragstart="start(event) ">&#x265F;</span></td>
-                    <td id="2_2" class="black" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_b2" draggable="true" ondragstart="start(event) ">&#x265F;</span></td>
-                    <td id="2_3" class="white" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_b3" draggable="true" ondragstart="start(event) ">&#x265F;</span></td>
-                    <td id="2_4" class="black" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_b4" draggable="true" ondragstart="start(event) ">&#x265F;</span></td>
-                    <td id="2_5" class="white" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_b5" draggable="true" ondragstart="start(event) ">&#x265F;</span></td>
-                    <td id="2_6" class="black" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_b6" draggable="true" ondragstart="start(event) ">&#x265F;</span></td>
-                    <td id="2_7" class="white" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_b7" draggable="true" ondragstart="start(event) ">&#x265F;</span></td>
-                    <td id="2_8" class="black" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_b8" draggable="true" ondragstart="start(event) ">&#x265F;</span></td>
+                    <td id="b1" data-x="1" data-y="2" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_b1"draggable="true" class="figure"   ondragstart="start(event) ">&#x265F;</div>
+                    </td>
+                    <td id="b2" data-x="2" data-y="2" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_b2"draggable="true" class="figure"   ondragstart="start(event) ">&#x265F;</div>
+                    </td>
+                    <td id="b3" data-x="3" data-y="2" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_b3"draggable="true" class="figure"   ondragstart="start(event) ">&#x265F;</div>
+                    </td>
+                    <td id="b4" data-x="4" data-y="2" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_b4"draggable="true" class="figure"   ondragstart="start(event) ">&#x265F;</div>
+                    </td>
+                    <td id="b5" data-x="5" data-y="2" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_b5"draggable="true" class="figure"   ondragstart="start(event) ">&#x265F;</div>
+                    </td>
+                    <td id="b6" data-x="6" data-y="2" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_b6"draggable="true" class="figure"   ondragstart="start(event) ">&#x265F;</div>
+                    </td>
+                    <td id="b7" data-x="7" data-y="2" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_b7"draggable="true" class="figure"   ondragstart="start(event) ">&#x265F;</div>
+                    </td>
+                    <td id="b8" data-x="8" data-y="2" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_b8"draggable="true" class="figure"   ondragstart="start(event) ">&#x265F;</div>
+                    </td>
 
                     <td>2</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td id="3_1" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="3_2" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="3_3" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="3_4" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="3_5" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="3_6" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="3_7" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="3_8" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
+                    <td id="c1" data-x="1" data-y="3" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="c2" data-x="2" data-y="3" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="c3" data-x="3" data-y="3" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="c4" data-x="4" data-y="3" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="c5" data-x="5" data-y="3" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="c6" data-x="6" data-y="3" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="c7" data-x="7" data-y="3" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="c8" data-x="8" data-y="3" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
                     <td>3</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td id="4_1" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="4_2" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="4_3" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="4_4" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="4_5" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="4_6" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="4_7" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="4_8" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-
-
+                    <td id="d1" data-x="1" data-y="4" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="d2" data-x="2" data-y="4" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="d3" data-x="3" data-y="4" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="d4" data-x="4" data-y="4" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="d5" data-x="5" data-y="4" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="d6" data-x="6" data-y="4" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="d7" data-x="7" data-y="4" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="d8" data-x="8" data-y="4" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
                     <td>4</td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td id="5_1" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="5_2" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="5_3" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="5_4" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="5_5" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="5_6" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="5_7" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="5_8" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
+                    <td id="e1" data-x="1" data-y="5" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="e2" data-x="2" data-y="5" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="e3" data-x="3" data-y="5" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="e4" data-x="4" data-y="5" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="e5" data-x="5" data-y="5" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="e6" data-x="6" data-y="5" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="e7" data-x="7" data-y="5" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="e8" data-x="8" data-y="5" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
                     <td>5</td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td id="6_1" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="6_2" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="6_3" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="6_4" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="6_5" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="6_6" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="6_7" class="white" ondrop="end(event)" ondragover="middle(event)"></td>
-                    <td id="6_8" class="black" ondrop="end(event)" ondragover="middle(event)"></td>
-
-
+                    <td id="f1" data-x="1" data-y="6" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="f2" data-x="2" data-y="6" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="f3" data-x="3" data-y="6" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="f4" data-x="4" data-y="6" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="f5" data-x="5" data-y="6" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="f6" data-x="6" data-y="6" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="f7" data-x="7" data-y="6" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
+                    <td id="f8" data-x="8" data-y="6" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)"></td>
                     <td>6</td>
                 </tr>
                 <tr>
                     <td>7</td>
-                    <td id="7_1" class="black" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_w1" draggable="true" ondragstart="start(event) ">&#x2659;</span data-figure=""></td>
-                    <td id="7_2" class="white" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_w2" draggable="true" ondragstart="start(event) ">&#x2659;</span></td>
-                    <td id="7_3" class="black" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_w3" draggable="true" ondragstart="start(event) ">&#x2659;</span></td>
-                    <td id="7_4" class="white" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_w4" draggable="true" ondragstart="start(event) ">&#x2659;</span></td>
-                    <td id="7_5" class="black" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_w5" draggable="true" ondragstart="start(event) ">&#x2659;</span></td>
-                    <td id="7_6" class="white" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_w6" draggable="true" ondragstart="start(event) ">&#x2659;</span></td>
-                    <td id="7_7" class="black" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_w7" draggable="true" ondragstart="start(event) ">&#x2659;</span></td>
-                    <td id="7_8" class="white" ondrop="end(event)" ondragover="middle(event)"><span data-figure="pawn_w8" draggable="true" ondragstart="start(event) ">&#x2659;</span></td>
+                    <td id="g1" data-x="1" data-y="7" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_w1"draggable="true" class="figure"   ondragstart="start(event) ">&#x2659;</div>
+                    </td>
+                    <td id="g2" data-x="2" data-y="7" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_w2"draggable="true" class="figure"   ondragstart="start(event) ">&#x2659;</div>
+                    </td>
+                    <td id="g3" data-x="3" data-y="7" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_w3"draggable="true" class="figure"   ondragstart="start(event) ">&#x2659;</div>
+                    </td>
+                    <td id="g4" data-x="4" data-y="7" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_w4"draggable="true" class="figure"   ondragstart="start(event) ">&#x2659;</div>
+                    </td>
+                    <td id="g5" data-x="5" data-y="7" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_w5"draggable="true" class="figure"   ondragstart="start(event) ">&#x2659;</div>
+                    </td>
+                    <td id="g6" data-x="6" data-y="7" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_w6"draggable="true" class="figure"   ondragstart="start(event) ">&#x2659;</div>
+                    </td>
+                    <td id="g7" data-x="7" data-y="7" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_w7"draggable="true" class="figure"   ondragstart="start(event) ">&#x2659;</div>
+                    </td>
+                    <td id="g8" data-x="8" data-y="7" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="pawn_w8"draggable="true" class="figure"   ondragstart="start(event) ">&#x2659;</div>
+                    </td>
                     <td>7</td>
                 </tr>
                 <tr>
                     <td>8</td>
-                    <td id="8_1" class="white" ondrop="end(event)" ondragover="middle(event)"><span data-figure="tower_w1" draggable="true" ondragstart="start(event) ">&#x2656;</span></td>
-                    <td id="8_2" class="black" ondrop="end(event)" ondragover="middle(event)"><span data-figure="horse_w1" draggable="true" ondragstart="start(event) ">&#x2658;</span></td>
-                    <td id="8_3" class="white" ondrop="end(event)" ondragover="middle(event)"><span data-figure="bishop_w1" draggable="true" ondragstart="start(event) ">&#x2657;</span></td>
-                    <td id="8_4" class="black" ondrop="end(event)" ondragover="middle(event)"><span data-figure="queen_w" draggable="true" ondragstart="start(event) ">&#x2655;</span></td>
-                    <td id="8_5" class="white" ondrop="end(event)" ondragover="middle(event)"><span data-figure="king_w" draggable="true" ondragstart="start(event) ">&#x2654;</span></td>
-                    <td id="8_6" class="black" ondrop="end(event)" ondragover="middle(event)"><span data-figure="bishop_w2" draggable="true" ondragstart="start(event) ">&#x2657;</span></td>
-                    <td id="8_7" class="white" ondrop="end(event)" ondragover="middle(event)"><span data-figure="horse_w2" draggable="true" ondragstart="start(event) ">&#x2658;</span></td>
-                    <td id="8_8" class="black" ondrop="end(event)" ondragover="middle(event)"><span data-figure="tower_w2" draggable="true" ondragstart="start(event) ">&#x2656;</span></td>
+                    <td id="h1" data-x="1" data-y="8" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="tower_w1"draggable="true" class="figure"   ondragstart="start(event) ">&#x2656;</div>
+                    </td>
+                    <td id="h2" data-x="2" data-y="8" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="horse_w1"draggable="true" class="figure"   ondragstart="start(event) ">&#x2658;</div>
+                    </td>
+                    <td id="h3" data-x="3" data-y="8" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="bishop_w1"draggable="true" class="figure"   ondragstart="start(event) ">&#x2657;</div>
+                    </td>
+                    <td id="h4" data-x="4" data-y="8" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="queen_w"draggable="true" class="figure"   ondragstart="start(event) ">&#x2655;</div>
+                    </td>
+                    <td id="h5" data-x="5" data-y="8" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="king_w"draggable="true" class="figure"   ondragstart="start(event) ">&#x2654;</div>
+                    </td>
+                    <td id="h6" data-x="6" data-y="8" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="bishop_w2"draggable="true" class="figure"   ondragstart="start(event) ">&#x2657;</div>
+                    </td>
+                    <td id="h7" data-x="7" data-y="8" class="space white" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="horse_w2"draggable="true" class="figure"   ondragstart="start(event) ">&#x2658;</div>
+                    </td>
+                    <td id="h8" data-x="8" data-y="8" class="space black" ondrop="paleidimas(event)" ondragover="tikrinimas(event)">
+                        <div id="tower_w2"draggable="true" class="figure"   ondragstart="start(event) ">&#x2656;</div>
+                    </td>
                     <td>8</td>
                 </tr>
                 <tr>
@@ -141,7 +200,6 @@
                     <td>H</td>
                     <td></td>
                 </tr>
-
             </tbody>
         </table>
     </div>
