@@ -1,10 +1,6 @@
-let figure, pradinisLangelis, dabartinisLangelis, figurosTekstas, pradinisX, pradinisY, dabartinisX, dabartinisY;
-let xReiksmes = [];
-let yReiksmes = [];
-for (let i = 0; i < 8; i++) {
-    xReiksmes.push(i + 1);
-    yReiksmes.push(i + 1);
-}
+let figure, pradinisLangelis, dabartinisLangelis, figurosTekstas, pradinisX, pradinisY, pasirinktasX, pasirinktasY;
+
+
 
 const start = (event) => {
     figurosTekstas = event.target.textContent;
@@ -19,25 +15,35 @@ const start = (event) => {
 }
 
 const tikrinimas = (event) => {
-    dabartinisLangelis = event.target.id;
-    // consolevent.log(dabartinisLangelis);
+    dabartinisLangelis = event.target;
     let arFIgura = event.target.classList.contains('figure');
     let arTuriChildu = event.target.children.length > 0;
-    dabartinisX = event.target.parentElement.getAttribute('data-x');
-    dabartinisY = event.target.parentElement.getAttribute('data-y');
-    console.log(dabartinisY);
-    console.log(dabartinisX);
-    if (arFIgura || arTuriChildu) {
-        if (figure.id === 'tower_b1') {
-            // consolevent.log(dabartinisX);
-            // consolevent.log('cia bokstas');
-            if (pradinisX === dabartinisX) {
-                dabartinisX = pradinisX;
-                return;
-            }
+    pasirinktasX = dabartinisLangelis.getAttribute('data-x');
+    pasirinktasY = dabartinisLangelis.getAttribute('data-y');
 
-        }
+    // console.log(vietaX);
+    // console.log(vietaY);
+    if (arFIgura || arTuriChildu) {
         return;
+    }
+
+    if (figure.id === 'tower_b1' || figure.id === 'tower_b2' || figure.id === 'tower_w1' || figure.id === 'tower_w2') {
+        console.log('bokstas');
+        if (pasirinktasX - pradinisX !== 0 && pasirinktasY - pradinisY !== 0) {
+            return;
+        }
+    } else if (figure.id === 'bishop_b1' || figure.id === 'bishop_b2' || figure.id === 'bishop_w1' || figure.id === 'bishop_w2') {
+        if (pasirinktasX - pradinisX !== pasirinktasY - pradinisY && pradinisX - pasirinktasX !== pasirinktasY - pradinisY) {
+            return;
+        }
+    } else if (figure.id === 'queen_b' || figure.id === 'queen_w') {
+        if (pasirinktasX - pradinisX !== pasirinktasY - pradinisY && pradinisX - pasirinktasX !== pasirinktasY - pradinisY && pasirinktasX - pradinisX !== 0 && pasirinktasY - pradinisY !== 0) {
+            return;
+        }
+    } else if (figure.id === 'pawn_b1') {
+        if (pasirinktasY - pradinisY > 2 && pasirinktasY - pradinisY < 0)  {
+            return;
+        }
     }
 
     event.preventDefault();
