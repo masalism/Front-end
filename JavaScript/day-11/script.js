@@ -35,8 +35,8 @@ var audi = {
 
 // objekto sablonas
 function Automobilis(marke, modelis, metai, numeris, spalva, transmisija, kebulas) {
-    this.marke = marke
-    this.modelis = modelis
+    this.marke = marke;
+    this.modelis = modelis;
     this.metai = metai;
     this.numeris = numeris;
     this.spalva = spalva;
@@ -47,11 +47,19 @@ function Automobilis(marke, modelis, metai, numeris, spalva, transmisija, kebula
     }
 }
 
+Automobilis.prototype.ilgis = 4;
+Automobilis.prototype.greitis = function() {
+    return this.metai / this.ilgis;
+}
+
 var bmw = new Automobilis('BMW', '320', 2007, 'LID486', 'Pilka', 'Automatine', 'Universalas');
 var toyota = new Automobilis('TOYOTA', 'Audris', 2004, 'EZO654', 'Zydra', 'Automatine', 'Hecbekas');
-console.log(bmw)
-console.log(toyota)
+
+console.log(bmw.greitis());
+console.log(toyota);
 console.log(bmw.amzius())
 console.log(Automobilis)
+
+
 
 // console.log(automobilis.amzius())

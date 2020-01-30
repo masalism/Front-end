@@ -9,17 +9,25 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Lenktynes</title>
 </head>
+<style>
+    .background {
+        background-image: url('1920x1080 Vehicles Lamborghini Veneno.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>
 
-<body>
+<body class="background">
     <div class="container-fluid mt-3">
         <form class="w-50 mx-auto">
             <div class="form-group">
-                <label for="marke">Automobilio Markė</label>
+                <label class="font-weight-bold" for="marke">Automobilio Markė</label>
                 <input type="text" class="form-control" id="marke">
             </div>
             <div class="form-group">
-                <label for="greitis">Greitis</label>
-                <input type="text" class="form-control" id="greitis">
+                <label class="font-weight-bold" for="greitis">Greitis</label>
+                <input type="number" class="form-control" id="greitis">
             </div>
             <button id="ivestiAuto" type="submit" class="btn btn-success">Įvesti</button>
         </form>
@@ -32,8 +40,8 @@
         <div class="hide">
             <form class="w-50 mx-auto">
                 <div class="form-group">
-                    <label for="laikas">Laikas, min</label>
-                    <input type="text" class="form-control" id="laikas">
+                    <label class="text-white font-weight-bold" for="laikas">Laikas, min</label>
+                    <input type="number" class="form-control" id="laikas">
                 </div>
                 <button id="lenktyniauti" type="submit" class="btn btn-danger">Lenktynės</button>
             </form>
