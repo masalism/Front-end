@@ -1,0 +1,47 @@
+{
+    "zmones": [
+        {
+            "vardas": "Mantas",
+            "pavarde": "Masalis",
+            "amzius": 29,
+            "draugai":[
+                {
+                    "vardas": "Darius",
+                    "pavarde": "Tulauskas"
+                },
+                {
+                    "vardas": "Ona",
+                    "pavarde": "Tulauske"
+                },
+                {
+                    "vardas": "Darius",
+                    "pavarde": "Tulauskas"
+                }
+            ]
+        },
+        {
+            "vardas": "Mantas",
+            "pavarde": "Masalis"
+        },
+        {
+            "vardas": "Mantas",
+            "pavarde": "Masalis"
+        },
+        {
+            "vardas": "Mantas",
+            "pavarde": "Masalis"
+        },
+        {
+            "vardas": "Mantas",
+            "pavarde": "Masalis"
+        },
+        {
+            "vardas": "Mantas",
+            "pavarde": "Masalis"
+        },
+        {
+            "vardas": "Mantas",
+            "pavarde": "Masalis"
+        }
+    ]
+}
