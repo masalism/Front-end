@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Testas</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <button id="btn-naujas" class="btn btn-primary" data-toggle="modal" data-target="#nauja-masina" >Naujas</button>
+        <table class="table mt-5">
+            <thead class="thead-dark">
+                <tr>
+                    <td>Numeris</td>
+                    <td>Greitis</td>
+                    <td>Laikas</td>
+                    <td>Data</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody id="tBody"></tbody>
+        </table>
+        
+        <div class="modal fade" id="nauja-masina" tabindex="-1" role="dialog" 
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Naujas automobilis</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Numeris</label>
+                                <input type="text" class="form-control" id="naujas-numeris">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Greitis</label>
+                                <input type="number" class="form-control" id="naujas-greitis">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Laikas</label>
+                                <input type="number" class="form-control" id="naujas-laikas">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Data</label>
+                                <input type="date" class="form-control" id="naujas-data">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="btn-prideti" class="btn btn-success" data-dismiss="modal">Prideti</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="taisyti-masina" tabindex="-1" role="dialog" 
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Keisti Duomenis</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Numeris</label>
+                                <input type="text" class="form-control" id="taisyti-numeris">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Greitis</label>
+                                <input type="number" class="form-control" id="taisyti-greitis">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Laikas</label>
+                                <input type="number" class="form-control" id="taisyti-laikas">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Data</label>
+                                <input type="date" class="form-control" id="taisyti-data">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="btn-keisti" class="btn btn-success" data-dismiss="modal">Taisyti</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/libs/jquery/jquery.js"></script>
+    <script src="assets/libs/popper/popper.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
